@@ -1,0 +1,70 @@
+:root{
+    --bg-primary: #000000;
+    --text-primary: #FFFFFF
+
+}
+@font-face {
+    font-family: "Integral CF";
+    src: url("/assets/fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf") format("opentype");
+    font-weight: 800; 
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi";
+    src: url("/assets/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Satoshi regular";
+    src: url("/assets/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf") format("opentype");
+  }
+  
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .message-promotion{
+        background-color: var(--bg-primary);
+        height: 34px;
+    }
+    .message-promotion p{
+        color: var(--text-primary);
+        font-family: "Satoshi"; 
+        padding: 0.6rem;
+        text-align: center;
+        font-size: 12px;
+        line-height: 16.2px;
+        
+    }
+    .message-promotion>p span{
+        text-decoration: underline;
+    }
+    .header{
+        padding: 1.3rem;
+    }
+    .nav-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-primary-container{
+        display: flex;
+        gap: 1rem;
+    }
+    .nav-primary-container h1{
+        font-family: "Integral CF";
+        font-size: 25.2px;
+        margin-top: -0.3rem;
+    }
+    .nav-secondary-container{
+        display: flex;
+        gap: 0.7rem;
+    }
+
+}
