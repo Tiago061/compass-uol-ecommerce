@@ -25,7 +25,6 @@
     font-style: normal;
   }
 /* For mobile phones: */
-@media only screen and (max-width: 768px ) {
     .message-promotion{
         background-color: var(--bg-primary);
     }
@@ -86,13 +85,17 @@
         padding-top: 1rem ;
 
     }
+    .container-btn{
+        display: flex;
+        justify-content: center;
+    }
     .btn-shop{
         background-color: var(--bg-primary);
         font-family: "Satoshi";
         color: var(--text-primary);
         font-size: 16px;
         line-height: 21.6px;
-        width: 358px;
+        width: 900px;
         border-radius: 62px;
         border: none;
         cursor: pointer;
@@ -115,54 +118,57 @@
         color: rgba(var(--rbga-primary), 0.6);
         margin-top: -1.2rem;
     }
-    .container-image{
-        margin-top: -5.2rem;
-    
-    }
     .stat-primary{
-        padding-left: 1rem;
+        padding-left: 1.7rem;
     }
     .stat-secondary{
         padding-right: 1rem;
     }
     .stat-third {
         margin-top: -0.5rem;
+        margin-bottom: 5rem;
+        z-index: 1;
     }
 
     hr{
         opacity: 30%;
         color: var(--bg-primary);
     }
+    
+    .container-image{
+        margin-top: -5.4rem;
+    }
 
     .models{
         margin-left: -1rem;
-        position: static;
+        width: min(768px, 100vw);
+        
     }
-    .star-primary{
-        position: relative;
-        top: 12rem;
-        left: 0.6rem;
-    }
-    .star-secondary{
-        position: relative;
-        left: 14rem;
-        top: 7.5rem;
+    .star{
+        position: absolute;
+        width: 40px;
     }
     
+    
     .section-brands{
-        margin: 0;
         background-color: var(--bg-primary);
-        padding-top: 7vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .list-brands{
+        padding-top: 2rem;
     }
     .list-brands ul{
         display: flex;
         flex-wrap: wrap;
+        gap: 1rem;
         justify-content: space-around;
-        height: 14vh;
         padding-bottom: 1rem;
     }
-    .logocalvin{
-        margin-left: -4rem;
+
+    .logoprada{
+        padding-left: 1.3rem;
     }
-}
-   
+    .logocalvin{
+        padding-right: 1rem;
+    }
