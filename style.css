@@ -3,6 +3,7 @@
     --rbga-primary: 0, 0, 0;
     --text-primary: #FFFFFF;
     --bg-secondary: #F2F0F1;
+    --bg-third: #F0F0F0;
 
 }
 
@@ -177,13 +178,14 @@
         padding-right: 1rem;
     }
 /* for tablet */
-@media screen and (min-width: 479px) and (max-width: 768px){
+@media screen and (min-width: 768px){
     .section-title{
         color: var(--bg-primary);
         font-family: "Integral CF";
         font-size: 36px;
         width: 80%;
         line-height: 34px;
+        
     }
     .p-title{
         font-family: "Satoshi regular";
@@ -220,14 +222,18 @@
         margin-bottom: 5rem;
         z-index: 1;
     }
+    
     .logoprada{
-        padding: 3px;
+        padding-top: 2px;
+        padding-left: 1px;
     }
-       
+
+    
+    
 }
 
 /* for Desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
     .close{
         display: block;
     }
@@ -242,50 +248,81 @@
         font-size: 14px;
         line-height: 16.2px;
     }
+    .message-promotion{
+        display: flex;
+        justify-content: space-between;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .promotion-title{
+        width: 84%;;
+    }
+    .button-close{
+        display: flex;
+        align-items: center;
+        
+    }
     .nav-header{
         display: flex;
         justify-content: space-around;
-        
+        height: 6vh;
+        margin-left: 3.5rem;
+    
     }
     .nav-primary-container{
         display: flex;
         align-items: center;
         font-family: "Satoshi regular";
         font-size: 16px;
-        height: 6vh;
-
     }
    
     .nav-primary-container h1{
-        font-size: 30px;
-        margin-right: 2rem;
-        
+        font-size: 32px;
+        margin-right: 1.3rem;
     }
     .nav-list{
         display: flex;
         list-style: none;  
-        gap: 2rem; 
+        gap: 1.7rem; 
+
     }
     .input-group{
         display: flex;
         align-items: center;
-        background-color: var(--bg-secondary);
+        background-color: var(--bg-third);
         padding: 12px 16rem 12px 16px;
         border-radius: 62px;
         height: 48px;
-        width: 577px;
+        width: 100%;
         gap: 10px;
+
+        
     }
     .input-field{
-        width: 100%;
+    
         border: none;
         font-family: "Satoshi regular";
         font-size: 16px;
         background-color: transparent;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.2rem;
     }
     .input-field:focus{
        outline: none;
     }
+
+    .nav-secondary-container{
+        margin-right: 4rem;
+    }
+    .nav-img{
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        gap: 14px;
+    }
+   
 
 }
