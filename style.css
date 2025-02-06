@@ -81,6 +81,10 @@
         width: 90%;
         line-height: 34px;
     }
+    .container-section{
+        display: flex;
+        flex-direction: column;
+    }
 
     .container-section p{
         font-family: "Satoshi regular";
@@ -110,6 +114,7 @@
     .container-statistics{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin-top: 1rem;
     }
     .stat-item h2{
@@ -130,31 +135,24 @@
         padding-right: 1rem;
     }
     .stat-third {
-        margin-top: -0.5rem;
-        margin-bottom: 5rem;
-        z-index: 1;
+        text-align: center;
+        padding-top: 0.8rem;
+    }
+    .line, .models-desk{
+        display: none;
     }
 
     hr{
         opacity: 30%;
         color: var(--bg-primary);
     }
-    
-    .container-image{
-        margin-top: -5.4rem;
-    }
-
     .models{
         margin-left: -1rem;
         width: min(768px, 100vw);
         
     }
-    .star{
-        position: absolute;
-        width: 40px;
-    }
-    
-    
+
+
     .section-brands{
         background-color: var(--bg-primary);
         padding-left: 1rem;
@@ -170,6 +168,9 @@
         justify-content: space-around;
         padding-bottom: 1rem;
     }
+    .logomoba{
+        height: 23.25px;
+    }
 
     .logoprada{
         padding-left: 1.3rem;
@@ -178,7 +179,7 @@
         padding-right: 1rem;
     }
 /* for tablet */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 980px){
     .section-title{
         color: var(--bg-primary);
         font-family: "Integral CF";
@@ -200,33 +201,12 @@
         justify-content: space-around;
         margin-top: 1rem;
     }
-    .stat-item h2{
-        font-family: "Satoshi";
-        font-size: 24px;
-        color: var(--bg-primary);
-    }
-    .stat-item p{
-        font-family: "Satoshi regular";
-        font-size: 12px;
-        color: rgba(var(--rbga-primary), 0.6);
-        margin-top: -1.2rem;
-    }
-    .stat-primary{
-        padding-left: 6rem;
-    }
-    .stat-secondary{
-        padding-right: 5rem;
-    }
-    .stat-third {
-        margin-top: -0.5rem;
-        margin-bottom: 5rem;
-        z-index: 1;
-    }
     
     .logoprada{
         padding-top: 2px;
         padding-left: 1px;
     }
+
 
     
     
@@ -237,7 +217,7 @@
     .close{
         display: block;
     }
-    .search-nav, .side-nav{
+    .search-nav, .side-nav, .models{
         display: none;
     }
     .message-promotion p{
@@ -270,8 +250,6 @@
         display: flex;
         justify-content: space-around;
         height: 6vh;
-        margin-left: 3.5rem;
-    
     }
     .nav-primary-container{
         display: flex;
@@ -323,6 +301,71 @@
         margin-left: 2rem;
         gap: 14px;
     }
-   
+    .container-geral{
+        padding: 5rem;
+    }
+    .container{
+        background-image: url(./assets/img/models-desktop.svg);
+        height: 700px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position: bottom;
+
+    }
+    .section-title{
+        font-size: 64px;
+        line-height: 64px;
+        width: 50%;
+    }
+    .p-title{
+        font-size: 18px;
+        line-height: 22px;
+        width: 38%;
+    }
+    .container-btn{
+        display: flex;
+        justify-content: start;
+        margin-top: 1rem;
+    }
+    .btn-shop{
+        width: 15%;
+    }
+    .container-statistics{
+       display: flex;
+       justify-content: start;
+       gap: 2rem;
+       padding-top: 4rem;
+    }
+    .line, .models-desk{
+        display: flex;
+    }
+    .stat-item{
+        padding:0;
+    }
+    .stat-item h2{
+        font-family: "Satoshi";
+        font-size: 40px;
+        color: var(--bg-primary);
+    }
+    .stat-item p{
+        font-family: "Satoshi regular";
+        font-size: 16px;
+        color: rgba(var(--rbga-primary), 0.6);
+        margin-top: -1.2rem;
+    }
+    .section-brands{
+        height: 122px;
+        margin-top: 2rem;
+    }
+    .logomoba{
+        height: 33.35px;
+    }
+    .list-brands ul{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+
 
 }
