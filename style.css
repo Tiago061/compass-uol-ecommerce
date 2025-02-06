@@ -27,6 +27,8 @@
 /* For mobile phones: */
     .message-promotion{
         background-color: var(--bg-primary);
+        display: flex;
+        justify-content: center;
     }
     .message-promotion p{
         color: var(--text-primary);
@@ -43,6 +45,9 @@
     }
     .header{
         padding: 1.3rem;
+    }
+    .close{
+        display: none;
     }
     .nav-header{
         display: flex;
@@ -66,23 +71,23 @@
     .container{
         background-color: var(--bg-secondary);
         padding: 1rem;
-        margin-bottom: -2rem;
+        margin-bottom: -2rem; 
+        padding-top: 2rem;
     }
     .section-title{
         color: var(--bg-primary);
         font-family: "Integral CF";
-        font-size: 48px;
-        line-height: 40px;
-        padding-top: 1rem;
+        font-size: 36px;
+        width: 90%;
+        line-height: 34px;
     }
 
-    
     .container-section p{
         font-family: "Satoshi regular";
         color: rgba(var(--rbga-primary), 0.6);
         font-size: 14px;
         line-height: 20px;
-        padding-top: 1rem ;
+        padding-top: 1rem;
 
     }
     .container-btn{
@@ -95,7 +100,7 @@
         color: var(--text-primary);
         font-size: 16px;
         line-height: 21.6px;
-        width: 900px;
+        width: 358px;
         border-radius: 62px;
         border: none;
         cursor: pointer;
@@ -172,3 +177,81 @@
     .logocalvin{
         padding-right: 1rem;
     }
+/* for tablet */
+@media screen and (min-width: 479px) and (max-width: 680px){
+    .section-title{
+        color: var(--bg-primary);
+        font-family: "Integral CF";
+        font-size: 36px;
+        width: 80%;
+        line-height: 34px;
+    }
+    .p-title{
+        font-family: "Satoshi regular";
+        color: rgba(var(--rbga-primary), 0.6);
+        font-size: 14px;
+        width: 80%;
+        line-height: 20px;
+        padding-top: 1rem;
+    }
+    .container-statistics{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+    .stat-item h2{
+        font-family: "Satoshi";
+        font-size: 24px;
+        color: var(--bg-primary);
+    }
+    .stat-item p{
+        font-family: "Satoshi regular";
+        font-size: 12px;
+        color: rgba(var(--rbga-primary), 0.6);
+        margin-top: -1.2rem;
+    }
+    .stat-primary{
+        padding-left: 6rem;
+    }
+    .stat-secondary{
+        padding-right: 5rem;
+    }
+    .stat-third {
+        margin-top: -0.5rem;
+        margin-bottom: 5rem;
+        z-index: 1;
+    }
+    .logoprada{
+        padding: 3px;
+    }
+       
+}
+
+/* for Desktop */
+@media screen and (min-width: 768px) {
+    .close{
+        display: block;
+    }
+    .primary-img-nav{
+        display: none;
+    }
+    .message-promotion p{
+        color: var(--text-primary);
+        font-family: "Satoshi"; 
+        padding: 0.6rem;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16.2px;
+    }
+    .nav-primary-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Satoshi regular";
+        font-size: 16px;
+        height: 6vh;
+    }
+    .nav-primary-container h1{
+        font-size: 30px;
+    }
+}
