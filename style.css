@@ -67,7 +67,6 @@
         display: flex;
         gap: 0.7rem;
     }
-
     .container{
         background-color: var(--bg-secondary);
         padding: 1rem;
@@ -178,7 +177,7 @@
         padding-right: 1rem;
     }
 /* for tablet */
-@media screen and (min-width: 479px) and (max-width: 680px){
+@media screen and (min-width: 479px) and (max-width: 768px){
     .section-title{
         color: var(--bg-primary);
         font-family: "Integral CF";
@@ -228,11 +227,11 @@
 }
 
 /* for Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .close{
         display: block;
     }
-    .primary-img-nav{
+    .search-nav, .side-nav{
         display: none;
     }
     .message-promotion p{
@@ -243,15 +242,50 @@
         font-size: 14px;
         line-height: 16.2px;
     }
+    .nav-header{
+        display: flex;
+        justify-content: space-around;
+        
+    }
     .nav-primary-container{
         display: flex;
-        justify-content: center;
         align-items: center;
         font-family: "Satoshi regular";
         font-size: 16px;
         height: 6vh;
+
     }
+   
     .nav-primary-container h1{
         font-size: 30px;
+        margin-right: 2rem;
+        
     }
+    .nav-list{
+        display: flex;
+        list-style: none;  
+        gap: 2rem; 
+    }
+    .input-group{
+        display: flex;
+        align-items: center;
+        background-color: var(--bg-secondary);
+        padding: 12px 16rem 12px 16px;
+        border-radius: 62px;
+        height: 48px;
+        width: 577px;
+        gap: 10px;
+    }
+    .input-field{
+        width: 100%;
+        border: none;
+        font-family: "Satoshi regular";
+        font-size: 16px;
+        background-color: transparent;
+        padding-bottom: 0.5rem;
+    }
+    .input-field:focus{
+       outline: none;
+    }
+
 }
