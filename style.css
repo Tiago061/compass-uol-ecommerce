@@ -178,23 +178,31 @@
     .logocalvin{
         padding-right: 1rem;
     }
+
+    .section-carousel{
+        padding-bottom: 1rem;
+    }
+
     .carousel-title{
         font-family: "Integral CF";
         font-size: 24px;
         text-align: center;
         padding: 4rem 2.5rem 2.5rem 2.5rem;
-        
     }
+
     .group-carousel{
         display: flex;
         overflow: scroll;
         gap: 1rem;
         justify-content: space-around;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
+    
     .outfit{
         height: 200px;
     }
+
     .spec-title, .price, .previous-price{
         font-size: 16px;
         color: var(--bg-primary);
@@ -237,10 +245,18 @@
         font-family: "Satoshi regular";
         font-size: 14px;
         height: 48px;
-        
     }
+
+    .border-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .border-section hr{
+        color: #0000001A;
+    }
+
 /* for tablet */
-@media screen and (min-width: 980px){
+@media screen and (min-width: 400px){
     .section-title{
         color: var(--bg-primary);
         font-family: "Integral CF";
@@ -262,15 +278,18 @@
         justify-content: space-around;
         margin-top: 1rem;
     }
+    .line{
+        display: flex;
+    }
+
+    .stat-item{
+        padding:0;
+    }
     
     .logoprada{
         padding-top: 2px;
         padding-left: 1px;
     }
-
-
-    
-    
 }
 
 /* for Desktop */
@@ -338,11 +357,8 @@
         height: 48px;
         width: 100%;
         gap: 10px;
-
-        
     }
     .input-field{
-    
         border: none;
         font-family: "Satoshi regular";
         font-size: 16px;
@@ -422,16 +438,86 @@
         color: rgba(var(--rbga-primary), 0.6);
         margin-top: -1.2rem;
     }
+
     .section-brands{
         height: 122px;
         margin-top: 2rem;
+        padding-bottom: 8rem;
     }
+
     .logomoba{
         height: 33.35px;
     }
+
     .list-brands ul{
         padding: 0.5rem;
         display: flex;
         justify-content: space-around;
+    }
+
+    .carousel-title{
+        font-family: "Integral CF";
+        font-size: 40px;
+        text-align: center;
+        padding: 4rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    .group-carousel{
+        display: flex;
+        overflow: scroll;
+        gap: 1rem;
+        justify-content: space-around;
+        margin-left: 4rem;
+        margin-right: 4rem;
+
+    }
+    
+    .outfit{
+        height: 320px;
+    }
+
+    .spec-title, .price, .previous-price{
+        font-size: 20px;
+        color: var(--bg-primary);
+        font-family: "Satoshi";
+    }
+    .specifications{
+        line-height: 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .specifications img{
+        height: 19px;
+    }
+    .price, .previous-price{
+        font-size: 24px;
+    }
+    .previous-price{
+        text-decoration: line-through;
+        color: rgba(var(--rbga-primary), 0.4);
+    }
+    .discount{
+        font-size: 12px;
+        font-family: "Satoshi";
+        display: flex;
+        align-items: center;
+        color: var(--text-discount);
+        background-color: #FF33331A;
+        border-radius: 62px;
+        height: 28px;
+        width: 58px;
+        justify-content: center;
+    }
+    .group-prices{
+        display: flex;
+        gap: 8px;
+    }
+
+    .border-section{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    .section-carousel{
+        padding-bottom: 1rem;
     }
 }
