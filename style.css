@@ -4,6 +4,7 @@
     --text-primary: #FFFFFF;
     --bg-secondary: #F2F0F1;
     --bg-third: #F0F0F0;
+    --text-discount: #ff333396;
 
 }
 
@@ -103,7 +104,6 @@
         font-family: "Satoshi";
         color: var(--text-primary);
         font-size: 16px;
-        line-height: 21.6px;
         width: 358px;
         border-radius: 62px;
         border: none;
@@ -155,8 +155,8 @@
 
     .section-brands{
         background-color: var(--bg-primary);
-        padding-left: 1rem;
-        padding-right: 1rem;
+
+        padding: 1rem;
     }
     .list-brands{
         padding-top: 2rem;
@@ -166,7 +166,7 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-around;
-        padding-bottom: 1rem;
+        padding-bottom: 1rem;;
     }
     .logomoba{
         height: 23.25px;
@@ -177,6 +177,67 @@
     }
     .logocalvin{
         padding-right: 1rem;
+    }
+    .carousel-title{
+        font-family: "Integral CF";
+        font-size: 24px;
+        text-align: center;
+        padding: 4rem 2.5rem 2.5rem 2.5rem;
+        
+    }
+    .group-carousel{
+        display: flex;
+        overflow: scroll;
+        gap: 1rem;
+        justify-content: space-around;
+        margin-left: 1rem;
+    }
+    .outfit{
+        height: 200px;
+    }
+    .spec-title, .price, .previous-price{
+        font-size: 16px;
+        color: var(--bg-primary);
+        font-family: "Satoshi";
+    }
+    .specifications{
+        line-height: 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .specifications img{
+        height: 16px;
+    }
+    .price, .previous-price{
+        font-size: 20px;
+    }
+    .previous-price{
+        text-decoration: line-through;
+        color: rgba(var(--rbga-primary), 0.4);
+    }
+    .discount{
+        font-size: 10px;
+        font-family: "Satoshi";
+        display: flex;
+        align-items: center;
+        color: var(--text-discount);
+    }
+    .group-prices{
+        display: flex;
+        gap: 8px;
+    }
+    .btn-container{
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .btn-view{
+        background-color: var(--rbga-primary), 0.1;
+        color: var(--bg-primary);
+        border: 1px solid rgba(var(--rbga-primary), 0.1);
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        height: 48px;
+        
     }
 /* for tablet */
 @media screen and (min-width: 980px){
@@ -327,14 +388,22 @@
         justify-content: start;
         margin-top: 1rem;
     }
+    .container-section{
+        width: auto;
+    }
+    .geral{
+        background-color: red;
+    }
     .btn-shop{
-        width: 15%;
+        width: auto;
     }
     .container-statistics{
        display: flex;
        justify-content: start;
        gap: 2rem;
        padding-top: 4rem;
+       width: auto;
+        flex-wrap: wrap;
     }
     .line, .models-desk{
         display: flex;
@@ -365,7 +434,4 @@
         display: flex;
         justify-content: space-around;
     }
-    
-
-
 }
