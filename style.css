@@ -179,6 +179,10 @@
         padding-right: 1rem;
     }
 
+    .section-carousel{
+        padding-bottom: 1rem;
+    }
+
     .carousel-title{
         font-family: "Integral CF";
         font-size: 24px;
@@ -241,8 +245,16 @@
         font-family: "Satoshi regular";
         font-size: 14px;
         height: 48px;
-        
     }
+
+    .border-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .border-section hr{
+        color: #0000001A;
+    }
+
 /* for tablet */
 @media screen and (min-width: 400px){
     .section-title{
@@ -498,5 +510,14 @@
     .group-prices{
         display: flex;
         gap: 8px;
+    }
+
+    .border-section{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    .section-carousel{
+        padding-bottom: 1rem;
     }
 }
