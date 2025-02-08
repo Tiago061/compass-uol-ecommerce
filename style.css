@@ -245,6 +245,7 @@
         font-family: "Satoshi regular";
         font-size: 14px;
         height: 48px;
+        
     }
 
     .border-section{
@@ -254,6 +255,35 @@
     .border-section hr{
         color: #0000001A;
     }
+    .section-clothes{
+        background-color: var(--bg-third);
+        margin: 1rem;
+        padding-top: 0.5rem;
+        border-radius: 20px;
+        padding-bottom: 0.8rem;
+    }
+
+    .container-title{
+       padding: 1rem;
+
+    }
+
+    .clothes-title{
+        font-family: "Integral CF";
+        font-size: 32px;
+        text-align: center;
+        
+    }
+
+    .group-clothes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+    
+
 
 /* for tablet */
 @media screen and (min-width: 400px){
