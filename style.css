@@ -155,8 +155,7 @@
 
     .section-brands{
         background-color: var(--bg-primary);
-
-        padding: 1rem;
+    
     }
     .list-brands{
         padding-top: 2rem;
@@ -166,7 +165,8 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-around;
-        padding-bottom: 1rem;;
+        padding-bottom: 1rem;
+        list-style: none;
     }
     .logomoba{
         height: 23.25px;
