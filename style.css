@@ -280,9 +280,59 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
 
+    .section-coments{
+        margin: 1rem;
+    }
+
+    .container-coments{
+        display: flex;
+        justify-content: space-around;
     }
     
+    .container-coments h1{
+        font-family: "Integral CF";
+        font-size: 32px;
+    }
+
+    .container-coments img{
+        padding-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .container-perfil{
+        display: flex;
+        gap: 4px;
+    }
+
+    .coments-item h3{
+        font-family: "Satoshi";
+        font-size: 16px;
+    }
+
+    .coments-item p{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--rbga-primary), 0.7);
+        padding-top: 10px;
+        object-fit: cover;
+    }
+
+    .coments-item{
+        border: 1px solid rgba(var(--rbga-primary), 0.1);
+        border-radius: 20px;
+        padding: 1rem;        
+    }
+    .coments-cards{
+        overflow: scroll;
+        display: flex;
+        gap: 25px;
+    }
+   .coments-desktop{
+    display: none;
+   }
 
 
 /* for tablet */
@@ -570,12 +620,23 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        flex-grow: 1; /* Todos crescem igualmente por padrão */
-        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura com o gap considerado */
+        flex-grow: 1; 
+        flex-basis: calc(50% - 10px); 
 
     }
     .container-formal{
         flex-grow:2;
         max-width: 100%;
+    }
+    .coments-desktop{
+        display: block;
+    }
+    .container-coments{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-coments img{
+        padding-top: 1rem;
+        margin-left: 0;
     }
 }
