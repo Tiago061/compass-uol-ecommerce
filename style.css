@@ -257,10 +257,10 @@
     }
     .section-clothes{
         background-color: var(--bg-third);
-        margin: 1rem;
+        margin: 0.5rem;
         padding-top: 0.5rem;
         border-radius: 20px;
-        padding-bottom: 0.8rem;
+        padding-bottom: 1rem;
     }
 
     .container-title{
@@ -549,5 +549,33 @@
     
     .section-carousel{
         padding-bottom: 1rem;
+    }
+
+    .section-clothes{
+        text-align: center;
+    }
+
+    .group-clothes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        background-color: red;
+    }
+
+    .container-item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1; /* Todos crescem igualmente por padrão */
+        flex-basis: calc(50% - 10px); /* Cada item ocupa metade da largura com o gap considerado */
+
+    }
+    .container-formal{
+        flex-grow:2;
+        max-width: 100%;
     }
 }
