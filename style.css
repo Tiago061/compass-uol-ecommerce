@@ -257,10 +257,10 @@
     }
     .section-clothes{
         background-color: var(--bg-third);
-        margin: 1rem;
+        margin: 0.5rem;
         padding-top: 0.5rem;
         border-radius: 20px;
-        padding-bottom: 0.8rem;
+        padding-bottom: 1rem;
     }
 
     .container-title{
@@ -280,9 +280,63 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+    .formal-desk, .party-desk{
+        display: none;
+    }
 
+    .section-coments{
+        margin: 1rem;
+    }
+
+    .container-coments{
+        display: flex;
+        justify-content: space-around;
     }
     
+    .container-coments h1{
+        font-family: "Integral CF";
+        font-size: 32px;
+    }
+
+    .container-coments img{
+        padding-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .container-perfil{
+        display: flex;
+        gap: 4px;
+    }
+   
+
+    .container-perfil h3{
+        font-family: "Satoshi";
+        font-size: 16px;
+    }
+
+    .paragraph-coments{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--rbga-primary), 0.7);
+        padding-top: 10px;
+        object-fit: cover;
+    }
+
+    .coments-item{
+        border: 1px solid rgba(var(--rbga-primary), 0.1);
+        border-radius: 20px;
+        padding: 1rem;        
+    }
+    .coments-cards{
+        overflow: scroll;
+        display: flex;
+        gap: 25px;
+    }
+   .coments-desktop{
+    display: none;
+   }
 
 
 /* for tablet */
@@ -356,10 +410,14 @@
         align-items: center;
         
     }
+    .header{
+        margin-left: 4rem;
+    }
     .nav-header{
         display: flex;
         justify-content: space-around;
         height: 6vh;
+        
     }
     .nav-primary-container{
         display: flex;
@@ -370,12 +428,12 @@
    
     .nav-primary-container h1{
         font-size: 32px;
-        margin-right: 1.3rem;
+        
     }
     .nav-list{
         display: flex;
         list-style: none;  
-        gap: 1.7rem; 
+        gap: 1rem; 
 
     }
     .input-group{
@@ -386,8 +444,10 @@
         border-radius: 62px;
         height: 48px;
         width: 100%;
-        gap: 10px;
+        gap: 0.5rem;
+
     }
+    
     .input-field{
         border: none;
         font-family: "Satoshi regular";
@@ -400,13 +460,13 @@
     }
 
     .nav-secondary-container{
-        margin-right: 4rem;
+        display: flex;
+        
     }
     .nav-img{
         display: flex;
-        align-items: center;
-        margin-left: 2rem;
-        gap: 14px;
+        align-items: center; 
+        gap: 10px;
     }
     .container-geral{
         padding: 5rem;
@@ -417,7 +477,6 @@
         background-repeat: no-repeat;
         background-position: right;
         background-position: bottom;
-
     }
     .section-title{
         font-size: 64px;
@@ -437,17 +496,15 @@
     .container-section{
         width: auto;
     }
-    .geral{
-        background-color: red;
-    }
+    
     .btn-shop{
         width: auto;
     }
     .container-statistics{
        display: flex;
        justify-content: start;
-       gap: 2rem;
-       padding-top: 4rem;
+       gap: 1rem;
+       padding-top: 1rem;
        width: auto;
         flex-wrap: wrap;
     }
@@ -471,8 +528,7 @@
 
     .section-brands{
         height: 122px;
-        margin-top: 2rem;
-        padding-bottom: 8rem;
+        margin-top: 2rem; 
     }
 
     .logomoba{
@@ -480,7 +536,6 @@
     }
 
     .list-brands ul{
-        padding: 0.5rem;
         display: flex;
         justify-content: space-around;
     }
@@ -550,4 +605,74 @@
     .section-carousel{
         padding-bottom: 1rem;
     }
+
+    .section-clothes{
+      margin: 4rem;
+    }
+
+    .clothes-title{
+        font-size: 48px;
+    }
+
+    .formal, .party{
+        display: none;
+    }
+    .formal-desk, .party-desk{
+        display: block;
+    }
+    .casual, .gym{
+        height: 289px;
+    }
+    .group-clothes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-coments{
+        margin: 3rem;
+        
+    }
+    .coments-desktop{
+        display: block;
+    }
+    .container-coments{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-coments h1{
+        font-size: 48px;
+
+    }
+    .container-coments img{
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+    .group-arrows{
+        display: flex;
+        gap: 15px;
+        margin-right: 4rem;
+    }
+   
+
+    .coments-cards{
+        display: flex;
+        overflow: scroll;
+        gap: 15px;
+        margin-top: -2.5rem;  
+    }
+    .paragraph-coments{
+        font-size: 16px;
+        width: 336px;
+        height: auto;
+    }
+    
+    .container-perfil h3{
+        font-size: 20px;
+    }
+    .coments-item{
+       height: 239.58px;
+    }
+
 }
