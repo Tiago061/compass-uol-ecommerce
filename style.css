@@ -281,6 +281,9 @@
         align-items: center;
         gap: 10px;
     }
+    .formal-desk, .party-desk{
+        display: none;
+    }
 
     .section-coments{
         margin: 1rem;
@@ -407,10 +410,14 @@
         align-items: center;
         
     }
+    .header{
+        margin-left: 4rem;
+    }
     .nav-header{
         display: flex;
         justify-content: space-around;
         height: 6vh;
+        
     }
     .nav-primary-container{
         display: flex;
@@ -421,12 +428,12 @@
    
     .nav-primary-container h1{
         font-size: 32px;
-        margin-right: 1.3rem;
+        
     }
     .nav-list{
         display: flex;
         list-style: none;  
-        gap: 1.7rem; 
+        gap: 1rem; 
 
     }
     .input-group{
@@ -437,8 +444,10 @@
         border-radius: 62px;
         height: 48px;
         width: 100%;
-        gap: 10px;
+        gap: 0.5rem;
+
     }
+    
     .input-field{
         border: none;
         font-family: "Satoshi regular";
@@ -451,13 +460,13 @@
     }
 
     .nav-secondary-container{
-        margin-right: 4rem;
+        display: flex;
+        
     }
     .nav-img{
         display: flex;
-        align-items: center;
-        margin-left: 2rem;
-        gap: 14px;
+        align-items: center; 
+        gap: 10px;
     }
     .container-geral{
         padding: 5rem;
@@ -468,7 +477,6 @@
         background-repeat: no-repeat;
         background-position: right;
         background-position: bottom;
-
     }
     .section-title{
         font-size: 64px;
@@ -488,17 +496,15 @@
     .container-section{
         width: auto;
     }
-    .geral{
-        background-color: red;
-    }
+    
     .btn-shop{
         width: auto;
     }
     .container-statistics{
        display: flex;
        justify-content: start;
-       gap: 2rem;
-       padding-top: 4rem;
+       gap: 1rem;
+       padding-top: 1rem;
        width: auto;
         flex-wrap: wrap;
     }
@@ -522,8 +528,7 @@
 
     .section-brands{
         height: 122px;
-        margin-top: 2rem;
-        padding-bottom: 8rem;
+        margin-top: 2rem; 
     }
 
     .logomoba{
@@ -531,7 +536,6 @@
     }
 
     .list-brands ul{
-        padding: 0.5rem;
         display: flex;
         justify-content: space-around;
     }
@@ -603,35 +607,31 @@
     }
 
     .section-clothes{
-        text-align: center;
+      margin: 4rem;
     }
 
+    .clothes-title{
+        font-size: 48px;
+    }
+
+    .formal, .party{
+        display: none;
+    }
+    .formal-desk, .party-desk{
+        display: block;
+    }
+    .casual, .gym{
+        height: 289px;
+    }
     .group-clothes{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
-        width: 100%;
-        background-color: red;
-    }
-
-    .container-item{
-        width: 100%;
-        display: flex;
         justify-content: center;
-        flex-grow: 1; 
-        flex-basis: calc(50% - 10px); 
+    }
 
-    }
-    .container-formal{
-        flex-grow:2;
-        max-width: 100%;
-    }
     .container-coments{
-        margin: 4rem;
-        width: 100%;
+        margin: 3rem;
         
     }
     .coments-desktop{
@@ -662,14 +662,17 @@
         gap: 15px;
         margin-top: -2.5rem;  
     }
-   .paragraph-coments{
-    font-size: 16px;
-    width: 336px;
-    height: auto;
-   }
-   
-   .container-perfil h3{
-    font-size: 20px;
-   }
+    .paragraph-coments{
+        font-size: 16px;
+        width: 336px;
+        height: auto;
+    }
+    
+    .container-perfil h3{
+        font-size: 20px;
+    }
+    .coments-item{
+       height: 239.58px;
+    }
 
 }
