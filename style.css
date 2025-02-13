@@ -305,13 +305,14 @@
         display: flex;
         gap: 4px;
     }
+   
 
-    .coments-item h3{
+    .container-perfil h3{
         font-family: "Satoshi";
         font-size: 16px;
     }
 
-    .coments-item p{
+    .paragraph-coments{
         font-family: "Satoshi regular";
         font-size: 14px;
         line-height: 20px;
@@ -628,6 +629,11 @@
         flex-grow:2;
         max-width: 100%;
     }
+    .container-coments{
+        margin: 4rem;
+        width: 100%;
+        
+    }
     .coments-desktop{
         display: block;
     }
@@ -635,8 +641,35 @@
         display: flex;
         justify-content: space-between;
     }
+    .container-coments h1{
+        font-size: 48px;
+
+    }
     .container-coments img{
         padding-top: 1rem;
         margin-left: 0;
     }
+    .group-arrows{
+        display: flex;
+        gap: 15px;
+        margin-right: 4rem;
+    }
+   
+
+    .coments-cards{
+        display: flex;
+        overflow: scroll;
+        gap: 15px;
+        margin-top: -2.5rem;  
+    }
+   .paragraph-coments{
+    font-size: 16px;
+    width: 336px;
+    height: auto;
+   }
+   
+   .container-perfil h3{
+    font-size: 20px;
+   }
+
 }
