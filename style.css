@@ -334,9 +334,84 @@
         display: flex;
         gap: 25px;
     }
-   .coments-desktop{
-    display: none;
-   }
+    .coments-desktop{
+        display: none;
+    }
+    .group-arrows{
+        display: flex;
+    }
+
+    .section-newsletter{
+       display: flex;
+       padding: 0.7rem;
+       
+
+    }
+
+    .container-newsletter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--bg-primary);
+        border-radius: 20px;
+        width: 358px;
+        height: 293px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .container-newsletter h2{
+        color: var(--text-primary);
+        font-family: "Integral CF";
+        font-size: 32px;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .group-input{
+        display: flex;
+        background-color: var(--text-primary);
+        width: 311px;
+        height: 42px;
+        border-radius: 62px;
+        align-items: center;
+        gap: 10px;
+        padding-left: 0.5rem;
+        
+
+        img{
+            width: 16.88px;
+            height: 13.13px;
+        }
+
+        input{
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            font-family: "Satoshi regular";
+            outline: none;
+        }
+    }
+
+    .newsletter-sub{
+        background-color: var(--text-primary);
+        font-family: "Satoshi";
+        color: var(--bg-primary);
+        border-radius: 62px;
+        font-size: 14px;
+        width: 311px;
+        height: 42px;
+    }
+
+    .form-newsletter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+
 
 
 /* for tablet */
@@ -673,6 +748,43 @@
     }
     .coments-item{
        height: 239.58px;
+    }
+    .section-newsletter{
+        margin: 3rem;
+    }
+    .container-newsletter{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        height: 180px;
+        justify-content: space-around;
+        gap: 6rem;
+    }
+
+    .group-input {
+        height: 48px;
+        width: 349px;
+
+        img{
+            height: 15.75px;
+            width: 20.25px;
+        }
+        
+        input{
+            font-size: 16px;
+        }
+    }
+    .newsletter-sub{
+        height: 46px;
+        width: 349px;
+        font-size: 16px;
+    }
+    .container-newsletter h2{
+        font-size: 40px;
+        line-height: 45px;
+        width: 50%;
+        
     }
 
 }
