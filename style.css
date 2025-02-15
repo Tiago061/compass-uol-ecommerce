@@ -344,8 +344,9 @@
     .section-newsletter{
        display: flex;
        padding: 0.7rem;
-       
-
+       background-image: linear-gradient(
+        to bottom, #FFFF 50%, #F0F0F0 50%
+       );
     }
 
     .container-newsletter{
@@ -870,7 +871,9 @@
        height: 239.58px;
     }
     .section-newsletter{
-        margin: 3rem;
+       padding: 3rem;
+       background-image: linear-gradient(to bottom, #FFFF 50%, #F0F0F0 50%);
+       width: 100%;
     }
     .container-newsletter{
         display: flex;
@@ -906,9 +909,12 @@
         width: 50%;
         
     }
+    
 
     footer{
         padding: 4rem;
+        margin-top: -5rem;
+        
     }
 
     .group-support{
