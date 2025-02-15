@@ -292,6 +292,7 @@
     .container-coments{
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
     
     .container-coments h1{
@@ -321,22 +322,22 @@
         line-height: 20px;
         color: rgba(var(--rbga-primary), 0.7);
         padding-top: 10px;
-        object-fit: cover;
+        width: 100%;
     }
 
     .coments-item{
         border: 1px solid rgba(var(--rbga-primary), 0.1);
         border-radius: 20px;
-        padding: 1rem;        
+        padding: 1rem;
+        min-width: 100%;
+  
     }
     .coments-cards{
-        overflow: scroll;
+        overflow: auto;
         display: flex;
-        gap: 25px;
+        justify-content: space-between;
     }
-    .coments-desktop{
-        display: none;
-    }
+    
     .group-arrows{
         display: flex;
     }
@@ -344,8 +345,9 @@
     .section-newsletter{
        display: flex;
        padding: 0.7rem;
-       
-
+       background-image: linear-gradient(
+        to bottom, #FFFF 50%, #F0F0F0 50%
+       );
     }
 
     .container-newsletter{
@@ -412,16 +414,27 @@
 
     footer{
         background-color: var(--bg-third);
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 1rem;
+    }
+
+    .group-support{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .group-resources{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .container-footer-primary{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .container-footer-primary h2{
@@ -859,7 +872,9 @@
        height: 239.58px;
     }
     .section-newsletter{
-        margin: 3rem;
+       padding: 3rem;
+       background-image: linear-gradient(to bottom, #FFFF 50%, #F0F0F0 50%);
+       width: 100%;
     }
     .container-newsletter{
         display: flex;
@@ -894,6 +909,83 @@
         line-height: 45px;
         width: 50%;
         
+    }
+    
+
+    footer{
+        padding: 4rem;
+        margin-top: -5rem;
+        
+    }
+
+    .group-support{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .group-resources{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .help{
+       padding-left: 0;
+    }   
+
+    .copy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-footer-primary{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container-footer-primary h2{
+        font-family: "Integral CF";
+        font-size: 33.45px;
+    }
+
+    .container-footer-primary p{
+        
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        color: #00000099;
+        line-height: 20px;
+        width: 45%;
+        
+    }
+
+    .logos{
+        background-color: var(--text-primary);
+        border: 1px solid #00000033;
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-face{
+        background-color: var(--bg-primary);
+    }
+
+    .container-support h3{
+        font-family: "Satoshi regular";
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: var(--bg-primary);
+        text-transform: uppercase;
+    }
+
+    .container-support p{
+        font-family: "Satoshi regular";
+        font-size: 16px;
+        line-height: 19px;
+        color: #00000099;
     }
 
 }
