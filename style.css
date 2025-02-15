@@ -412,16 +412,27 @@
 
     footer{
         background-color: var(--bg-third);
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 1rem;
+    }
+
+    .group-support{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .group-resources{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .container-footer-primary{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .container-footer-primary h2{
@@ -894,6 +905,80 @@
         line-height: 45px;
         width: 50%;
         
+    }
+
+    footer{
+        padding: 4rem;
+    }
+
+    .group-support{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .group-resources{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .help{
+       padding-left: 0;
+    }   
+
+    .copy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-footer-primary{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container-footer-primary h2{
+        font-family: "Integral CF";
+        font-size: 33.45px;
+    }
+
+    .container-footer-primary p{
+        
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        color: #00000099;
+        line-height: 20px;
+        width: 45%;
+        
+    }
+
+    .logos{
+        background-color: var(--text-primary);
+        border: 1px solid #00000033;
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-face{
+        background-color: var(--bg-primary);
+    }
+
+    .container-support h3{
+        font-family: "Satoshi regular";
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: var(--bg-primary);
+        text-transform: uppercase;
+    }
+
+    .container-support p{
+        font-family: "Satoshi regular";
+        font-size: 16px;
+        line-height: 19px;
+        color: #00000099;
     }
 
 }
