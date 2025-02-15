@@ -408,8 +408,117 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    footer{
+        background-color: var(--bg-third);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 1rem;
+    }
+
+    .container-footer-primary{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-footer-primary h2{
+        font-family: "Integral CF";
+        font-size: 28.85px;
+    }
+
+    .container-footer-primary p{
+        
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        color: #00000099;
+        line-height: 20px;
+        
+    }
+
+    .logos{
+        background-color: var(--text-primary);
+        border: 1px solid #00000033;
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-face{
+        background-color: var(--bg-primary);
+    }
+
+    .container-logo{
+        display: flex;
+        gap: 10px;
+    }
+
+    .support{
+        display: flex;
+        gap: 50px;
+    }
+    
+    .container-support{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
 
     }
+
+    .container-support h3{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: var(--bg-primary);
+        text-transform: uppercase;
+    }
+
+    .container-support p{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        line-height: 16px;
+        color: #00000099;
+    }
+
+    .help{
+        padding-left: 1rem;
+    }
+
+    .copy p{
+        color: #00000099;
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        text-align: center;
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment{
+        background-color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39.96px;
+        height: 25.74px;
+        border-radius: 4.61px;
+    }
+
+    .container-payment{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+
+    
 
 
 
