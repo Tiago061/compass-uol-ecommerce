@@ -26,6 +26,15 @@
     font-weight: 400;
     font-style: normal;
   }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
 /* For mobile phones: */
     .message-promotion{
         background-color: var(--bg-primary);
@@ -192,11 +201,11 @@
 
     .group-carousel{
         display: flex;
-        overflow: scroll;
+        overflow-x: auto;
         gap: 1rem;
         justify-content: space-around;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        padding-left: 1rem;
+        padding: 1rem;
     }
     
     .outfit{
@@ -616,6 +625,7 @@
         height: 6vh;
         
     }
+    
     .nav-primary-container{
         display: flex;
         align-items: center;
@@ -746,11 +756,11 @@
 
     .group-carousel{
         display: flex;
-        overflow: scroll;
+        overflow-x: auto;
         gap: 1rem;
         justify-content: space-around;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
     }
     
@@ -831,9 +841,7 @@
         margin: 3rem;
         
     }
-    .coments-desktop{
-        display: block;
-    }
+    
     .container-coments{
         display: flex;
         justify-content: space-between;
@@ -849,13 +857,13 @@
     .group-arrows{
         display: flex;
         gap: 15px;
-        margin-right: 4rem;
+        padding-right: 4rem;
     }
    
 
     .coments-cards{
         display: flex;
-        overflow: scroll;
+        overflow-x: auto;
         gap: 15px;
         margin-top: -2.5rem;  
     }
@@ -868,13 +876,14 @@
     .container-perfil h3{
         font-size: 20px;
     }
+    
     .coments-item{
        height: 239.58px;
+       min-width: 400px;
     }
     .section-newsletter{
        padding: 3rem;
        background-image: linear-gradient(to bottom, #FFFF 50%, #F0F0F0 50%);
-       width: 100%;
     }
     .container-newsletter{
         display: flex;
