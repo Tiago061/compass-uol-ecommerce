@@ -76,6 +76,10 @@
                             </div>
                         </div>
                     <div class="container-image">
+                        <div class="group-star">
+                            <img src="./assets/img/star-models.svg" alt="star" class="primary-star">
+                            <img src="./assets/img/star-models2.svg" alt="star" class="second-star">
+                        </div>
                         <img src="./assets/img/Rectangle 2.svg" alt="models" 
                         class="models">
                     </div>  
@@ -294,7 +298,7 @@
         <section class="section-newsletter">
             <article class="container-newsletter">
                 <h2>stay upto date about our latest offers</h2>
-                <form class="form-newsletter">
+                <form class="form-newsletter" onsubmit="event.preventDefault(); verifyEmail();">
                     <div class="group-input">
                         <img src="./assets/img/Vector.png" alt="icon email">
                         <input id="input-newsletter" type="email" placeholder="Enter your email address">
@@ -387,5 +391,7 @@
         </footer>
         
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
