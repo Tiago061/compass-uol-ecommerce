@@ -690,12 +690,14 @@
         padding: 5rem;
     }
     .container{
-        background-image: url(./assets/img/models-desktop.svg);
+        background-image: url(./assets/img/Group\ 1.png);
         height: 700px;
         background-repeat: no-repeat;
         background-position: right;
         background-position: bottom;
     }
+
+    
     .section-title{
         font-size: 64px;
         line-height: 64px;
@@ -1006,6 +1008,9 @@
         font-size: 16px;
         line-height: 19px;
         color: #00000099;
+    }
+    .primary-star, .second-star{
+        display: none;
     }
 
 }
