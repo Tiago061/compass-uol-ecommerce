@@ -155,6 +155,17 @@
         opacity: 30%;
         color: var(--bg-primary);
     }
+
+    .group-star{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 5rem;
+    }
+    .primary-star{
+        position: relative;
+        top: 2.5rem;
+    }
     .models{
         margin-left: -1rem;
         width: min(768px, 100vw);
