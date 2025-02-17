@@ -728,7 +728,7 @@
        width: auto;
         flex-wrap: wrap;
     }
-    .line, .models-desk{
+    .line{
         display: flex;
     }
     .stat-item{
@@ -882,6 +882,10 @@
         /* Máscara para efeito de fade nas laterais */
         -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
         mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0)); 
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
     }
     .paragraph-coments{
         font-size: 16px;
