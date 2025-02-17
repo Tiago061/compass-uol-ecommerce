@@ -728,7 +728,7 @@
        width: auto;
         flex-wrap: wrap;
     }
-    .line, .models-desk{
+    .line{
         display: flex;
     }
     .stat-item{
