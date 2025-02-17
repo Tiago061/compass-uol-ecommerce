@@ -294,7 +294,7 @@
         <section class="section-newsletter">
             <article class="container-newsletter">
                 <h2>stay upto date about our latest offers</h2>
-                <form class="form-newsletter">
+                <form class="form-newsletter" onsubmit="event.preventDefault(); verifyEmail();">
                     <div class="group-input">
                         <img src="./assets/img/Vector.png" alt="icon email">
                         <input id="input-newsletter" type="email" placeholder="Enter your email address">
@@ -387,5 +387,7 @@
         </footer>
         
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
