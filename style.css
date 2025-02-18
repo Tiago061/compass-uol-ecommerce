@@ -35,7 +35,10 @@
     html, body {
         overflow-x: hidden;
     }
+
+
 /* For mobile phones: */
+    /* Message promotion */
     .message-promotion{
         background-color: var(--bg-primary);
         display: flex;
@@ -54,6 +57,8 @@
         text-decoration: underline;
         font-weight: bold;
     }
+
+    
     .header{
         padding: 1rem;
     }
