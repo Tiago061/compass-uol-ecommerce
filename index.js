@@ -10,7 +10,6 @@ function validateEmail(email){
 //função de verificação de email.
 function verifyEmail(){
     const emailInput = document.getElementById("input-newsletter").value.trim()
-    console.log("Entered email:", emailInput); // Debugging
 
 
     if(!validateEmail(emailInput)){
