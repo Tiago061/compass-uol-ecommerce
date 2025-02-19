@@ -58,13 +58,15 @@
         font-weight: bold;
     }
 
-    
+    /* Header*/
     .header{
         padding: 1rem;
     }
     .close{
         display: none;
     }
+
+    /*NavBar */
     .nav-header{
         display: flex;
         justify-content: space-between;
@@ -84,6 +86,8 @@
         display: flex;
         gap: 0.7rem;
     }
+
+    /*Section title and models*/
     .container{
         background-color: var(--bg-secondary);
         padding: 1rem;
@@ -107,12 +111,13 @@
         font-size: 14px;
         line-height: 20px;
         padding-top: 1rem;
-
     }
+
     .container-btn{
         display: flex;
         justify-content: center;
     }
+
     .btn-shop{
         background-color: var(--bg-primary);
         font-family: "Satoshi";
@@ -125,6 +130,7 @@
         padding: 16px 54px 16px 54px;
         margin-top: 1rem;
     }
+
     .container-statistics{
         display: flex;
         justify-content: space-around;
@@ -151,8 +157,9 @@
     .stat-third {
         text-align: center;
         padding-top: 0.8rem;
-       }
-    .line, .models-desk{
+    }
+
+    .line{
         display: none;
     }
 
@@ -180,7 +187,7 @@
         
     }
 
-
+   /*Section brands */
     .section-brands{
         background-color: var(--bg-primary);
     
@@ -207,6 +214,8 @@
         padding-right: 1rem;
     }
 
+    /*Section Carousel clothes*/
+
     .section-carousel{
         padding-bottom: 1rem;
     }
@@ -224,7 +233,6 @@
         gap: 1rem;
         justify-content: space-around;
         padding-left: 1rem;
-        padding: 1rem;
     }
     
     .outfit{
@@ -237,7 +245,7 @@
         font-family: "Satoshi";
     }
     .specifications{
-        line-height: 1.5rem;
+        line-height: 1rem;
         padding-top: 0.5rem;
     }
     .specifications img{
@@ -283,6 +291,8 @@
     .border-section hr{
         color: #0000001A;
     }
+
+    /*Section of catalog clothes */
     .section-clothes{
         background-color: var(--bg-third);
         margin: 0.5rem;
@@ -313,6 +323,7 @@
         display: none;
     }
 
+    /*Section of coments*/
     .section-coments{
         margin: 1rem;
     }
@@ -357,20 +368,27 @@
     .coments-item{
         border: 1px solid rgba(var(--rbga-primary), 0.1);
         border-radius: 20px;
-        padding: 1rem;
+        padding: 0.5rem;
         min-width: 100%;
+        height: 186.19px;
   
     }
     .coments-cards{
         overflow: auto;
         display: flex;
         justify-content: space-between;
+        gap: 1rem;
     }
     
     .group-arrows{
         display: flex;
     }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*Section Newsletter*/
     .section-newsletter{
        display: flex;
        justify-content: center;
@@ -439,7 +457,8 @@
         flex-direction: column;
         gap: 10px;
     }
-
+    
+    /*Footer*/
     footer{
         background-color: var(--bg-third);
         padding: 1rem;
@@ -794,7 +813,7 @@
         font-family: "Satoshi";
     }
     .specifications{
-        line-height: 1.5rem;
+        line-height: 1rem;
         padding-top: 0.5rem;
     }
     .specifications img{
@@ -851,6 +870,7 @@
     .casual, .gym{
         height: 289px;
     }
+
     .group-clothes{
         display: flex;
         flex-direction: row;
@@ -860,13 +880,13 @@
 
     .container-coments{
         margin: 3rem;
-        
     }
     
     .container-coments{
         display: flex;
         justify-content: space-between;
     }
+
     .container-coments h1{
         font-size: 48px;
 
@@ -892,9 +912,7 @@
         mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0)); 
     }
     
-    ::-webkit-scrollbar {
-        display: none;
-    }
+   
     .paragraph-coments{
         font-size: 16px;
         width: 336px;
@@ -911,8 +929,8 @@
     }
     .section-newsletter{
        padding: 3rem;
-       background-image: linear-gradient(to bottom, #FFFF 50%, #F0F0F0 50%);
     }
+    
     .container-newsletter{
         display: flex;
         flex-direction: row;
