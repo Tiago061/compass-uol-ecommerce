@@ -26,7 +26,19 @@
     font-weight: 400;
     font-style: normal;
   }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+
 /* For mobile phones: */
+    /* Message promotion */
     .message-promotion{
         background-color: var(--bg-primary);
         display: flex;
@@ -45,12 +57,16 @@
         text-decoration: underline;
         font-weight: bold;
     }
+
+    /* Header*/
     .header{
-        padding: 1.3rem;
+        padding: 1rem;
     }
     .close{
         display: none;
     }
+
+    /*NavBar */
     .nav-header{
         display: flex;
         justify-content: space-between;
@@ -64,22 +80,24 @@
         font-family: "Integral CF";
         font-size: 25.2px;
         margin-top: -0.3rem;
+        
     }
     .nav-secondary-container{
         display: flex;
         gap: 0.7rem;
     }
+
+    /*Section title and models*/
     .container{
         background-color: var(--bg-secondary);
         padding: 1rem;
         margin-bottom: -2rem; 
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .section-title{
         color: var(--bg-primary);
         font-family: "Integral CF";
         font-size: 36px;
-        width: 90%;
         line-height: 34px;
     }
     .container-section{
@@ -93,12 +111,13 @@
         font-size: 14px;
         line-height: 20px;
         padding-top: 1rem;
-
     }
+
     .container-btn{
         display: flex;
         justify-content: center;
     }
+
     .btn-shop{
         background-color: var(--bg-primary);
         font-family: "Satoshi";
@@ -111,6 +130,7 @@
         padding: 16px 54px 16px 54px;
         margin-top: 1rem;
     }
+
     .container-statistics{
         display: flex;
         justify-content: space-around;
@@ -138,7 +158,8 @@
         text-align: center;
         padding-top: 0.8rem;
     }
-    .line, .models-desk{
+
+    .line{
         display: none;
     }
 
@@ -146,17 +167,30 @@
         opacity: 30%;
         color: var(--bg-primary);
     }
+
+    .group-star{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 5rem;
+    }
+    .primary-star{
+        position: relative;
+        top: 2.5rem;
+    }
+    .container-image{
+        margin-top: -3rem;
+    }
     .models{
         margin-left: -1rem;
         width: min(768px, 100vw);
         
     }
 
-
+   /*Section brands */
     .section-brands{
         background-color: var(--bg-primary);
-
-        padding: 1rem;
+    
     }
     .list-brands{
         padding-top: 2rem;
@@ -166,7 +200,8 @@
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-around;
-        padding-bottom: 1rem;;
+        padding-bottom: 1rem;
+        list-style: none;
     }
     .logomoba{
         height: 23.25px;
@@ -178,6 +213,8 @@
     .logocalvin{
         padding-right: 1rem;
     }
+
+    /*Section Carousel clothes*/
 
     .section-carousel{
         padding-bottom: 1rem;
@@ -192,11 +229,10 @@
 
     .group-carousel{
         display: flex;
-        overflow: scroll;
+        overflow-x: auto;
         gap: 1rem;
         justify-content: space-around;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        padding-left: 1rem;
     }
     
     .outfit{
@@ -209,7 +245,7 @@
         font-family: "Satoshi";
     }
     .specifications{
-        line-height: 1.5rem;
+        line-height: 1rem;
         padding-top: 0.5rem;
     }
     .specifications img{
@@ -245,15 +281,308 @@
         font-family: "Satoshi regular";
         font-size: 14px;
         height: 48px;
+        
     }
 
     .border-section{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     .border-section hr{
         color: #0000001A;
     }
+
+    /*Section of catalog clothes */
+    .section-clothes{
+        background-color: var(--bg-third);
+        margin: 0.5rem;
+        padding-top: 0.5rem;
+        border-radius: 20px;
+        padding-bottom: 1rem;
+    }
+
+    .container-title{
+       padding: 1rem;
+
+    }
+
+    .clothes-title{
+        font-family: "Integral CF";
+        font-size: 32px;
+        text-align: center;
+        
+    }
+
+    .group-clothes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .formal-desk, .party-desk{
+        display: none;
+    }
+
+    /*Section of coments*/
+    .section-coments{
+        margin: 1rem;
+    }
+
+    .container-coments{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 0.5rem;
+    }
+    
+    .container-coments h1{
+        font-family: "Integral CF";
+        font-size: 32px;
+    }
+
+    .container-coments img{
+        padding-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .container-perfil{
+        display: flex;
+        gap: 4px;
+    }
+   
+
+    .container-perfil h3{
+        font-family: "Satoshi";
+        font-size: 16px;
+    }
+
+    .paragraph-coments{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(var(--rbga-primary), 0.7);
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .coments-item{
+        border: 1px solid rgba(var(--rbga-primary), 0.1);
+        border-radius: 20px;
+        padding: 1rem;
+        min-width: 100%;
+        height: 186.19px;
+  
+    }
+    .coments-cards{
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .group-arrows{
+        display: flex;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*Section Newsletter*/
+    .section-newsletter{
+       display: flex;
+       justify-content: center;
+       background-image: linear-gradient(
+        to bottom, #FFFF 50%, #F0F0F0 50%
+       );
+        margin-top: 2rem;
+    }
+
+    .container-newsletter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--bg-primary);
+        border-radius: 20px;
+        width: 358px;
+        height: 293px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .container-newsletter h2{
+        color: var(--text-primary);
+        font-family: "Integral CF";
+        font-size: 32px;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .group-input{
+        display: flex;
+        background-color: var(--text-primary);
+        width: 311px;
+        height: 42px;
+        border-radius: 62px;
+        align-items: center;
+        gap: 10px;
+        padding-left: 0.5rem;
+        
+
+        img{
+            width: 16.88px;
+            height: 13.13px;
+        }
+
+        input{
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            font-family: "Satoshi regular";
+            outline: none;
+        }
+    }
+
+    .newsletter-sub{
+        background-color: var(--text-primary);
+        font-family: "Satoshi";
+        color: var(--bg-primary);
+        border-radius: 62px;
+        font-size: 14px;
+        width: 311px;
+        height: 42px;
+    }
+
+    .form-newsletter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /*Footer*/
+    footer{
+        background-color: var(--bg-third);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .group-support{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .group-resources{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container-footer-primary{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-footer-primary h2{
+        font-family: "Integral CF";
+        font-size: 28.85px;
+    }
+
+    .container-footer-primary p{
+        
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        color: #00000099;
+        line-height: 20px;
+        
+    }
+
+    .logos{
+        background-color: var(--text-primary);
+        border: 1px solid #00000033;
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-face{
+        background-color: var(--bg-primary);
+    }
+
+    .container-logo{
+        display: flex;
+        gap: 10px;
+    }
+
+    .support{
+        display: flex;
+        gap: 50px;
+    }
+    
+    .container-support{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .container-support h3{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: var(--bg-primary);
+        text-transform: uppercase;
+    }
+
+    .container-support p{
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        line-height: 16px;
+        color: #00000099;
+    }
+
+    .help{
+        padding-left: 1rem;
+    }
+
+    .copy p{
+        color: #00000099;
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        text-align: center;
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment{
+        background-color: var(--text-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39.96px;
+        height: 25.74px;
+        border-radius: 4.61px;
+    }
+
+    .container-payment{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+
+    
+
+
+
 
 /* for tablet */
 @media screen and (min-width: 400px){
@@ -319,18 +648,21 @@
         width: 100%;
     }
     .promotion-title{
-        width: 84%;;
+        width: 84%;
     }
     .button-close{
         display: flex;
         align-items: center;
         
     }
+    .header{
+        margin-left: 1rem;
+    }
     .nav-header{
         display: flex;
-        justify-content: space-around;
-        height: 6vh;
+        justify-content: space-evenly;
     }
+    
     .nav-primary-container{
         display: flex;
         align-items: center;
@@ -340,12 +672,12 @@
    
     .nav-primary-container h1{
         font-size: 32px;
-        margin-right: 1.3rem;
+        
     }
     .nav-list{
         display: flex;
         list-style: none;  
-        gap: 1.7rem; 
+        gap: 1rem; 
 
     }
     .input-group{
@@ -355,9 +687,11 @@
         padding: 12px 16rem 12px 16px;
         border-radius: 62px;
         height: 48px;
-        width: 100%;
-        gap: 10px;
+        width: 577px;
+        gap: 0.5rem;
+
     }
+    
     .input-field{
         border: none;
         font-family: "Satoshi regular";
@@ -370,25 +704,27 @@
     }
 
     .nav-secondary-container{
-        margin-right: 4rem;
+        display: flex;
+        
     }
     .nav-img{
         display: flex;
-        align-items: center;
-        margin-left: 2rem;
-        gap: 14px;
+        align-items: center; 
+        gap: 10px;
     }
     .container-geral{
-        padding: 5rem;
+        padding-left: 5rem;
+        padding-top: 5rem;
     }
     .container{
-        background-image: url(./assets/img/models-desktop.svg);
+        background-image: url(./assets/img/Group\ 1.png);
         height: 700px;
         background-repeat: no-repeat;
         background-position: right;
         background-position: bottom;
-
     }
+
+    
     .section-title{
         font-size: 64px;
         line-height: 64px;
@@ -402,26 +738,24 @@
     .container-btn{
         display: flex;
         justify-content: start;
-        margin-top: 1rem;
+        
     }
     .container-section{
         width: auto;
     }
-    .geral{
-        background-color: red;
-    }
+    
     .btn-shop{
-        width: auto;
+        width: 210px;
     }
     .container-statistics{
        display: flex;
        justify-content: start;
-       gap: 2rem;
-       padding-top: 4rem;
+       gap: 1rem;
+       padding-top: 1rem;
        width: auto;
         flex-wrap: wrap;
     }
-    .line, .models-desk{
+    .line{
         display: flex;
     }
     .stat-item{
@@ -441,8 +775,7 @@
 
     .section-brands{
         height: 122px;
-        margin-top: 2rem;
-        padding-bottom: 8rem;
+        margin-top: 2rem; 
     }
 
     .logomoba{
@@ -450,7 +783,6 @@
     }
 
     .list-brands ul{
-        padding: 0.5rem;
         display: flex;
         justify-content: space-around;
     }
@@ -464,11 +796,11 @@
 
     .group-carousel{
         display: flex;
-        overflow: scroll;
+        overflow-x: auto;
         gap: 1rem;
         justify-content: space-around;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
 
     }
     
@@ -482,7 +814,7 @@
         font-family: "Satoshi";
     }
     .specifications{
-        line-height: 1.5rem;
+        line-height: 1rem;
         padding-top: 0.5rem;
     }
     .specifications img{
@@ -520,4 +852,205 @@
     .section-carousel{
         padding-bottom: 1rem;
     }
+
+    .section-clothes{
+      margin: 4rem;
+      margin-top: -0.5rem;
+    }
+
+    .clothes-title{
+        font-size: 48px;
+    }
+
+    .formal, .party{
+        display: none;
+    }
+    .formal-desk, .party-desk{
+        display: block;
+    }
+    .casual, .gym{
+        height: 289px;
+    }
+
+    .group-clothes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-coments{
+        margin: 3rem;
+    }
+    
+    .container-coments{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-coments h1{
+        font-size: 48px;
+
+    }
+    .container-coments img{
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+    .group-arrows{
+        display: flex;
+        gap: 15px;
+        padding-right: 6rem;
+    }
+   
+
+    .coments-cards{
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        margin-top: -2.5rem; 
+        /* Máscara para efeito de fade nas laterais */
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+        mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0)); 
+    }
+    
+   
+    .paragraph-coments{
+        font-size: 16px;
+        width: 336px;
+        height: auto;
+    }
+    
+    .container-perfil h3{
+        font-size: 20px;
+    }
+    
+    .coments-item{
+       height: 239.58px;
+       min-width: 400px;
+    
+    }
+    .section-newsletter{
+       padding: 3rem;
+    }
+    
+    .container-newsletter{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        height: 180px;
+        justify-content: space-around;
+        gap: 6rem;
+    }
+
+    .group-input {
+        height: 48px;
+        width: 349px;
+
+        img{
+            height: 15.75px;
+            width: 20.25px;
+        }
+        
+        input{
+            font-size: 16px;
+        }
+    }
+    .newsletter-sub{
+        height: 46px;
+        width: 349px;
+        font-size: 16px;
+    }
+    .container-newsletter h2{
+        font-size: 40px;
+        line-height: 45px;
+        width: 50%;
+        
+    }
+    
+
+    footer{
+        padding: 4rem;
+        margin-top: -5rem;
+        
+    }
+
+    .group-support{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .group-resources{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .help{
+       padding-left: 0;
+    }   
+
+    .copy{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container-footer-primary{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .container-footer-primary h2{
+        font-family: "Integral CF";
+        font-size: 33.45px;
+    }
+
+    .container-footer-primary p{
+        
+        font-family: "Satoshi regular";
+        font-size: 14px;
+        color: #00000099;
+        line-height: 20px;
+        width: 45%;
+        
+    }
+
+    .logos{
+        background-color: var(--text-primary);
+        border: 1px solid #00000033;
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-face{
+        background-color: var(--bg-primary);
+    }
+
+    .container-support h3{
+        font-family: "Satoshi regular";
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: var(--bg-primary);
+        text-transform: uppercase;
+    }
+
+    .container-support p{
+        font-family: "Satoshi regular";
+        font-size: 16px;
+        line-height: 19px;
+        color: #00000099;
+    }
+    .primary-star, .second-star{
+        display: none;
+    }
+
+    .border{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
